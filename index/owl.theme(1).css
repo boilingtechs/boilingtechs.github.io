@@ -1,0 +1,173 @@
+
+.scroll-outer{height:auto;overflow:hidden; padding:10px 0px 0px 0px;width:100%; margin:0px}
+#scroll{font-family:"Microsoft Yahei"; width:1150px; margin:0 auto;}
+#scroll .owl-wrapper-outer{margin:0 auto;}
+#scroll .item{position:relative;width:350px;height:auto;margin:0 auto;height:auto;overflow:hidden; margin-right:16px; padding:0px;}
+
+#scroll .item dl{ overflow:hidden; margin:0px; padding:0px; width:92%; margin:0 auto;margin-top:8px; margin-bottom:8px;  border:#eee 1px solid; padding:2%; background:#fff}
+#scroll .item dl dt{ overflow:hidden; margin:0px; padding:0px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis; line-height:36px; text-align:center; color:#20B09F; }
+#scroll .item dl dt h3{ overflow:hidden; margin:10px 10px; padding:0px 0px;font-size:16px; font-weight: normal;overflow:hidden;white-space:nowrap;text-overflow:ellipsis; line-height:36px; text-align:center; color:#20B09F; border-bottom:#CCCCCC 1px solid;}
+#scroll .item dl dd{ overflow:hidden; margin:0px; padding:0px 10px; font-size:12px; line-height:26px; color:#888; height:130px}
+#scroll .item dl dt h4{ color:#666; font-size:12px; font-weight:normal; margin-top:10px; border-top:#CCCCCC 1px solid}
+
+
+#scroll .item:hover dl{box-shadow:0 0 10px 1px rgba(0,0,0,.1);  border:#20B09F 1px solid;}
+#scroll .item:hover dt h3{ color:#20B09F;border-bottom:#20B09F 1px solid}
+#scroll .item dt h4 a:hover{ color:#20B09F;}
+#scroll .item:hover img{-webkit-transform: scale(1.1);transform: scale(1.1);-moz-transform: scale(1.1);}
+
+#scroll .item img{ width:100%; height:160px; vertical-align:top;transition: 0.6s;-moz-transition: 0.6s;-webkit-transition: 0.6s; }
+
+
+
+.owl-theme .owl-controls .owl-buttons div{position:absolute;top:180px;width:30px;height:50px;margin:0;padding:0;border-radius:0;font:50px/50px "Microsoft Yahei";background-color:transparent;overflow:hidden;}
+.owl-theme .owl-controls .owl-buttons .owl-prev{left:-35px;}
+.owl-theme .owl-controls .owl-buttons .owl-next{right:-35px;}
+.owl-theme .owl-controls .owl-buttons .owl-prev{background:url(../images/prev.png) no-repeat  center; width:40px; height:40px}
+.owl-theme .owl-controls .owl-buttons .owl-next{background:url(../images/next.png) no-repeat  right; width:40px; height:40px}
+.owl-theme .owl-controls .owl-buttons .owl-prev:before{content:" "; font-weight:bold;}
+.owl-theme .owl-controls .owl-buttons .owl-next:before{content:" "; font-weight:bold;}
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+@media (max-width: 1024px) {
+#scroll{width:90%;margin:0 auto;padding-top:10px;font-family:"Microsoft Yahei";}
+#scroll .item{position:relative;width:300px;height:auto;margin:0 auto;overflow:hidden;}
+.scroll-outer{height:aout; width:100%;overflow:hidden; padding:10px 0px 20px 0px;}
+#scroll .item img{ width:100%; height:137px; }
+
+
+}
+
+@media screen and (max-width: 768px) {
+.scroll-outer{height:auto;overflow:hidden; padding:2px 0px 4px 0px; width:100%}
+#scroll{width:90%;margin:0 auto;padding-top:10px;font-family:"Microsoft Yahei";}
+#scroll .item{position:relative;width:210px;height:auto;margin:0 auto;overflow:hidden;}
+#scroll .item img{ width:100%; height:96px; vertical-align:top;transition: 0.6s;-moz-transition: 0.6s;-webkit-transition: 0.6s; }
+#scroll .item dl dt h3{ overflow:hidden; margin:10px 10px; padding:0px 0px;font-size:15px; }
+}
+
+@media screen and (max-width: 667px) {
+.scroll-outer{height:auto;overflow:hidden; padding:2px 0px 4px 0px; width:100%}
+#scroll{width:550px;margin:0 auto;padding-top:10px;font-family:"Microsoft Yahei";}
+#scroll .item{position:relative;width:180px;height:auto;margin:0 auto;background-color:#fff;overflow:hidden;}
+#scroll .item img{width:100%;height:82px;}
+.owl-theme .owl-controls .owl-buttons div{position:absolute;top:126px;width:30px;height:60px;margin:0;padding:0;border-radius:0;font:50px/50px "Microsoft Yahei";background-color:transparent;overflow:hidden;_display:none;}
+#scroll .item dl dt h3{ overflow:hidden; margin:10px 10px; padding:0px 0px;font-size:14px; }
+
+}
+
+
+@media screen and (max-width: 568px) {
+.scroll-outer{height:auto;overflow:hidden; padding:2px 0px 4px 0px; width:100%}
+#scroll{width:520px;margin:0 auto;padding-top:10px;font-family:"Microsoft Yahei";}
+#scroll .item{position:relative;width:170px;height:auto;margin:0 auto;background-color:#fff;overflow:hidden;}
+#scroll .item img{width:100%;height:78px;}
+
+.owl-theme .owl-controls .owl-buttons div{position:absolute;top:120px;width:30px;height:60px;margin:0;padding:0;border-radius:0;font:50px/50px "Microsoft Yahei";background-color:transparent;overflow:hidden;_display:none;}
+#scroll .item dl dt h3{ overflow:hidden; margin:2px 4px; padding:0px 0px;font-size:14px; }
+#scroll .item dl dd{ overflow:hidden; margin:0px; padding:0px 5px; font-size:12px; line-height:22px; color:#888; height:110px}
+}
+
+
+@media screen and (max-width: 414px) {
+.scroll-outer{height:auto;overflow:hidden; padding:2px 0px 4px 0px; width:100%}
+#scroll{width:330px;margin:0 auto;padding-top:10px;font-family:"Microsoft Yahei";}
+#scroll .item{position:relative;width:160px;height:auto;margin:0 auto;background-color:#fff;overflow:hidden;}
+#scroll .item img{width:100%;height:73px;}
+
+.owl-theme .owl-controls .owl-buttons div{position:absolute;top:110px;width:30px;height:50px;margin:0;padding:0;border-radius:0;font:50px/50px "Microsoft Yahei";background-color:transparent;overflow:hidden;_display:none;}
+
+}
+
+@media screen and (max-width: 375px) {
+.scroll-outer{height:auto;overflow:hidden; padding:2px 0px 4px 0px; width:100%}
+#scroll{width:320px;margin:0 auto;padding-top:10px;font-family:"Microsoft Yahei";}
+}
+@media screen and (max-width: 320px) {
+.scroll-outer{height:auto;overflow:hidden; padding:2px 0px 4px 0px; width:100%}
+#scroll{width:306px;margin:0 auto;padding-top:10px;font-family:"Microsoft Yahei";}
+#scroll .item{position:relative;width:130px;height:auto;margin:0 auto;background-color:#fff;overflow:hidden;}
+#scroll .item img{width:100%;height:60px;}
+
+.owl-theme .owl-controls .owl-buttons div{position:absolute;top:45px;width:30px;height:50px;margin:0;padding:0;border-radius:0;font:50px/50px "Microsoft Yahei";background-color:transparent;overflow:hidden;_display:none;}
+
+
+}
+
+
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding:0px 4px;
+	font-size: 12px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #9D9495;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #9D9495;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(../images/AjaxLoader.gif) no-repeat center center
+}
+
+

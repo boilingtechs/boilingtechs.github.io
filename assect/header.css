@@ -1,0 +1,1118 @@
+
+.headerBg {
+    transition: all 0.3s ease-out 0s;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.headerBg.active {
+    border: none;
+    margin-top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1111;
+}
+
+.headerBg.fixed-top {
+    background: #31363A;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030
+}
+
+.fixed-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030
+}
+
+
+.headerBg.noEffect {
+    transform: translateY(0) !important;
+}
+
+.logo {
+    position: absolute;
+    left: 30px;
+    left: 0px;
+    margin-top: 2px
+}
+
+.logo img {
+    height: 60px;
+    width: auto
+}
+
+
+.hdRig {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    color: #FFFFFF;
+}
+
+.hdRig a {
+    color: #FFFFFF;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hdRigList {
+    font-size: 0;
+}
+
+.hdRigList li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    padding-left: 8px;
+    line-height: 84px;
+}
+
+.hdWx {
+    position: absolute;
+    right: -30px;
+    top: 84px;
+    width: 140px;
+    padding: 10px;
+    text-align: center;
+    background: #FFFFFF;
+    font-size: 12px;
+    color: #666666;
+    line-height: 26px;
+    display: none;
+}
+
+.hdWx img {
+    margin: 0 auto;
+}
+
+.hdRigList li:hover .hdWx {
+    display: block;
+}
+
+.hdTel {
+    font-size: 20px;
+    margin-top: -2px;
+    margin-right: 5px;
+}
+
+.hdShare {
+    margin-top: -10px;
+    font-size: 15px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+/*navList*/
+.navList {
+    display: table;
+    margin: 0 auto;
+}
+
+.navLi {
+    float: left;
+    height: 64px;
+    position: relative;
+}
+
+.navLi h3 {
+}
+
+.navLi h3 a {
+    display: block;
+    padding: 12px 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: normal
+}
+
+.navLi h3 a:hover {
+    color: #33CCCC;
+    background: url(../images/nav_bg.png) no-repeat center bottom;
+}
+
+.navLi h3 .on {
+    color: #33CCCC;
+    background: url(../images/nav_bg.png) no-repeat center bottom;
+}
+
+.navLi h3 a span {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    transition: all 0.4s ease 0s;
+}
+
+.navLi.on h3 a span, .navLi h3 a:hover span {
+}
+
+.navSub {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 64px;
+    width: 200px;
+    padding-top: 23px;
+    display: none;
+}
+
+.navSub:before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -11px;
+    top: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 13px 13px 13px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.75) transparent;
+}
+
+.navSubList {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+.navSubLi {
+    margin: 0px;
+}
+
+.navSubLi h4 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navSubLi h4 a {
+    display: block;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 42px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-out 0s;
+    font-weight: normal;
+    text-align: center
+}
+
+.navSubLi h4 a:hover {
+    color: #20B09F
+}
+
+.navSubLi.has h4 a {
+    background-image: url(../images/navLiBg.png);
+}
+
+.navSubLi a:hover {
+    color: #20B09F;
+}
+
+
+.navThrList {
+    padding-left: 15px;
+    display: none;
+}
+
+.navThrLi h5 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navThrLi h5 a {
+    display: block;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 46px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-out 0s;
+}
+
+.navThrLi.has h5 a {
+    background-image: url(../images/navLiBg.png);
+}
+
+.navFouList {
+    padding: 15px 0 15px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: none;
+}
+
+.navFouLi {
+    font-size: 12px;
+    color: #dddddd;
+    line-height: 24px;
+}
+
+.navFouLi a {
+    display: block;
+    color: #dddddd;
+}
+
+.navBoxm {
+    display: none;
+}
+
+.navListm {
+    list-style: none;
+    overflow: hidden;
+}
+
+.icon_phone {
+    height: 20px;
+    width: auto
+}
+
+.icon_phone img {
+    height: 20px;
+    width: auto
+}
+
+.header_phone {
+    position: absolute;
+    right: 0px;
+    top: 17px;
+    color: #FFFFFF;
+    width: 200px;
+}
+
+.header_phone .phone {
+    margin-left: 20px;
+}
+
+.header_phone h4 {
+    font-size: 14px;
+}
+
+.header_phone h2 {
+    font-size: 16px;
+    color: #fff;
+    line-height: 26px;
+    border-bottom: #33CCCC 3px solid
+}
+
+.container {
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    max-width: 1200px;
+    width: 96%;
+    margin: 0 auto
+}
+
+.container-fluid {
+    max-width: 1200px;
+    width: 96%;
+    height: auto;
+    margin: 0 auto;
+    position: relative
+}
+
+
+@media (max-width: 1600px) {
+    .navLi {
+        height: 64px;
+    }
+
+    .navLi h3 a {
+        padding: 12px 8px;
+    }
+
+    .hdRigList li {
+        line-height: 64px;
+    }
+
+    .hdWx, .navSub {
+        top: 64px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .navList {
+        position: relative;
+        left: -40px;
+    }
+
+    .navLi {
+        height: 64px;
+    }
+
+    .navLi h3 a {
+        padding: 14px 3px;
+        font-size: 14px;
+    }
+
+    .navLi h3 a span {
+        padding: 0 15px;
+    }
+
+    .hdRigList li {
+        line-height: 64px;
+    }
+
+    .hdWx, .navSub {
+        top: 64px;
+    }
+
+}
+
+.t_kong {
+    overflow: hidden;
+    clear: both;
+    height: 64px;
+}
+
+@media (max-width: 1025px) {
+    .logo {
+        position: absolute;
+        left: 30px;
+        left: 0px;
+        margin-top: 2px
+    }
+
+    .t_kong {
+        overflow: hidden;
+        clear: both;
+        height: 64px;
+    }
+
+    .navLi h3 a:hover {
+        color: #33CCCC;
+        background: none
+    }
+}
+
+@media (max-width: 1000px) {
+    .headerBg {
+        height: 50px
+    }
+
+    .header_phone {
+        display: none
+    }
+
+    .hidden-xs {
+        display: none !important;
+    }
+
+    .t_kong {
+        overflow: hidden;
+        clear: both;
+        height: 50px;
+    }
+
+    .container-fluid {
+        max-width: 1200px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        position: relative
+    }
+}
+
+
+@media (max-width: 992px) {
+    .headerBg {
+        background: #333;
+        margin-top: 0;
+        height: 50px
+    }
+
+    .logo {
+        padding: 2px 0 0px 0;
+        float: left;
+        position: static;
+        margin-left: 2%;
+    }
+
+    .logo img {
+        height: 40px
+    }
+
+    .hdRig {
+        float: right;
+        position: static;
+    }
+
+    .hdRigList li {
+        line-height: 60px;
+    }
+
+    .hdShare {
+        margin-top: 0;
+    }
+
+    .hdWx {
+        top: 54px;
+        right: 0;
+    }
+
+    .navBoxm {
+        display: none;
+        background: #444;
+        padding: 10px 4% 10px 4%;
+    }
+
+    .navLi h3 {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        font-weight: normal
+    }
+
+    .navLi h3 a {
+        padding: 0;
+        font-size: 16px;
+        line-height: 60px
+    }
+
+    .navLi h3 a span {
+        padding: 0;
+        border: none;
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
+
+    .navLi.has h3 a span {
+        background-image: url(../images/navLiBg.png);
+    }
+
+    .navLi {
+        float: none;
+        height: auto;
+        width: 100%;
+    }
+
+    .navlistm .navLi h3 a {
+        padding: 0;
+    }
+
+    .navSub {
+        position: static;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .navSub:before {
+        display: none;
+    }
+
+    .navSubList {
+        border-radius: 0;
+        background: #555;
+        padding: 5px 15px 10px 15px;
+    }
+
+    .navSubLi h4 a {
+        line-height: 38px;
+        text-align: left
+    }
+
+    .navThrList {
+        padding: 0 0 0 15px;
+    }
+
+    .navThrLi h5 a {
+        line-height: 38px;
+    }
+
+    .menuBtn {
+        float: right;
+        width: 40px;
+        height: 40px;
+        margin-top: 7px;
+        z-index: 3;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .menuBtn span {
+        display: block;
+        background: #FFFFFF;
+        width: 26px;
+        height: 1px;
+        font-size: 0;
+        margin: 14px auto 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menuBtn span:first-child + span {
+        margin-top: 6px;
+    }
+
+    .menuBtn span:first-child + span + span {
+        margin-top: 6px;
+    }
+
+    .menuBtn.active span:first-child + span {
+        transform: translateX(-40px);
+    }
+
+    .menuBtn.active span:first-child {
+        width: 28px;
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .menuBtn.active span:first-child + span + span {
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -4px);
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .header_phone {
+        display: none
+    }
+
+    .headerBg {
+        transform: translateY(0) !important;
+        height: 50px
+    }
+
+    .menuBtn {
+        float: right;
+        width: 40px;
+        height: 40px;
+        margin-top: 4px;
+        z-index: 3;
+        cursor: pointer;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 640px) {
+    .box1Cen {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 460px) {
+    .hdRigList li span {
+        display: none;
+    }
+
+    .hdTel {
+        margin-top: 0;
+    }
+
+    .banBtn {
+        width: 18px;
+        height: 28px;
+        border: 1px solid #FFFFFF;
+    }
+}
+
+@media (max-width: 360px) {
+
+}
+
+@media (max-height: 414px) {
+    .navBoxm {
+        max-height: 240px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navLi h3 .on {
+        color: #33CCCC;
+        background: none
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #333333
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+header .container-fluid {
+    padding: 0;
+}
+
+
+.down_bg {
+    overflow: hidden;
+    margin: 0px;
+    padding: 40px 0px;
+    background: #373D41;
+    color: #777777
+}
+
+.main_box {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.dowm_L {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 25%;
+    padding-left: 24px;
+}
+
+.dowm_M {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 50%
+}
+
+.dowm_R {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    width: 25%
+}
+
+.down_tel {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+.down_tel dl {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+.down_tel dl dt {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: normal;
+    line-height: 24px
+}
+
+.down_tel dl dd {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    color: #CCCCCC;
+    margin-bottom: 2px;
+    line-height: 24px
+}
+
+.d_tel {
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    float: left;
+    margin-top: 4px
+}
+
+.d_tel img {
+    width: 45px;
+    height: 45px;
+}
+
+.down_tel dl dt a {
+    color: #FFFFFF
+}
+
+.d_aq_tu {
+    overflow: hidden;
+    margin: 0px;
+    padding: 20px 0px 0px 0px;
+}
+
+
+.i_d_logo {
+    margin-right: 10px;
+    float: left;
+    padding: 2px;
+    text-align: center;
+    margin-bottom: 8px
+}
+
+.i_d_logo img {
+    width: 40px;
+    height: auto;
+    vertical-align: middle
+}
+
+@media only screen and (max-width: 400px) {
+    .d_aq_tu {
+        overflow: hidden;
+        margin: 0px;
+        padding: 5px 0px 0px 0px;
+    }
+
+    .i_d_logo img {
+        width: 65px;
+        height: auto;
+        vertical-align: middle
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .i_d_logo {
+        margin-right: 5px;
+        float: left;
+        padding: 2px;
+        text-align: center;
+    }
+
+    .i_d_logo img {
+        width: 65px;
+        height: auto;
+        vertical-align: middle
+    }
+}
+
+.dowen_logo p{
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0;
+}
+.dowen_logo {
+    overflow: hidden;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+.dowen_logo dl {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+.dowen_logo dl dt {
+    overflow: hidden;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.dowen_logo dl dd {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    color: #A3A6A8
+}
+
+.dowen_logo dl dt img {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px 0px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    vertical-align: top
+}
+
+.line_M {
+    overflow: hidden;
+    margin: 0px;
+    padding: 10px 50px 0px 50px;
+    border-left: #52595D 1px solid;
+    border-right: #52595D 1px solid;
+    min-height: 120px;
+    height: auto
+}
+
+.d_nav {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    color: #999999;
+    text-align: center
+}
+
+.d_nav span a {
+    color: #999999;
+    font-size: 14px
+}
+
+.d_nav span a:hover {
+    color: #20B09F
+}
+
+.copxx {
+    overflow: hidden;
+    margin: 0px;
+    padding: 10px 0px 0px 0px;
+    color: #777;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center
+}
+
+@media only screen and (max-width: 1100px) {
+    .line_M {
+        overflow: hidden;
+        margin: 0px 5px;
+        padding: 10px 20px 0px 20px;
+        border-left: #52595D 1px solid;
+        border-right: #52595D 1px solid;
+        min-height: 120px;
+        height: auto
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .line_M {
+        overflow: hidden;
+        margin: 0px 5px;
+        padding: 10px 10px 0px 10px;
+        border-left: #52595D 1px solid;
+        border-right: #52595D 1px solid;
+        min-height: 120px;
+        height: auto
+    }
+
+    .dowm_L {
+        float: left;
+        padding: 0;
+        width: 40%;
+        margin-left: 10%
+    }
+
+    .dowm_M {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        margin-top: 30px
+    }
+
+    .dowm_R {
+        float: right;
+        margin: 0px;
+        padding: 0px;
+        width: 40%;
+        margin-left: 10%;
+    }
+
+    .dowen_logo {
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        width: 180px;
+        margin: 0;
+        text-align: center
+    }
+
+    .line_M {
+        overflow: hidden;
+        margin: 0px 5px;
+        padding: 10px 0px 0px 0px;
+        border-left: #52595D 0px solid;
+        border-right: #52595D 0px solid;
+        border-top: #52595D 1px solid;
+        min-height: 50px;
+        height: auto;
+    }
+
+}
+
+
+@media only screen and (max-width: 550px) {
+    .dowm_L {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        width: 50%;
+        margin-left: 0%
+    }
+
+    .dowm_M {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        margin-top: 20px
+    }
+
+    .dowm_R {
+        float: right;
+        margin: 0px;
+        padding: 0px;
+        width: 50%;
+        margin-left: 0%;
+    }
+
+    .dowen_logo {
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        width: 99%;
+        margin: 0 auto
+    }
+
+    .dowen_logo dl dd {
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        font-size: 12px;
+        color: #A3A6A8
+    }
+
+    .dowen_logo dl dt img {
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px 0px;
+        max-width: 80%;
+        width: auto;
+        height: auto;
+        vertical-align: top
+    }
+
+    .d_aq_tu {
+        overflow: hidden;
+        margin: 0px;
+        padding: 15px 0px 0px 0px;
+    }
+
+    .d_nav {
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        color: #999999;
+        text-align: center
+    }
+
+    .d_nav span a {
+        color: #999999;
+        font-size: 12px
+    }
+
+
+    .copxx {
+        overflow: hidden;
+        margin: 0px;
+        padding: 10px 0px 0px 0px;
+        color: #777;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center
+    }
+
+    .line_M {
+        overflow: hidden;
+        margin: 0px 0px;
+        padding: 10px 0px 0px 0px;
+        border-left: #52595D 0px solid;
+        border-right: #52595D 0px solid;
+        border-top: #52595D 1px solid;
+        min-height: 50px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .down_tel dl dt {
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        font-size: 16px;
+        color: #fff;
+        font-weight: normal;
+        line-height: 20px
+    }
+
+    .down_tel dl dd {
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        font-size: 14px;
+        color: #CCCCCC;
+        margin-bottom: 2px;
+        line-height: 20px
+    }
+
+    .d_tel {
+        width: 35px;
+        height: 35px;
+        margin-right: 6px;
+        float: left;
+        margin-top: 4px
+    }
+
+    .d_tel img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .dowm_L {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        width: 55%;
+        margin-left: 0%
+    }
+
+    .dowm_R {
+        float: right;
+        margin: 0px;
+        padding: 0px;
+        width: 45%;
+        margin-left: 0%;
+    }
+
+    .dowen_logo dl dd {
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        font-size: 10px;
+        color: #A3A6A8;
+        line-height: 18px
+    }
+
+}
+.language-switchers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.35);
+    height: 30px;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.lang-item {
+    line-height: 24px;
+    width: 47px;
+    text-align: center;
+}
+
+.current-lang {
+    background-color: #31363A;
+    border-radius: 2px;
+}
