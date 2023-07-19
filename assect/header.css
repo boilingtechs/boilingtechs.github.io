@@ -1099,7 +1099,7 @@ header .container-fluid {
     padding: 3px;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.35);
-    height: 30px;
+    height: 24px;
     margin-top: 20px;
     font-size: 12px;
     font-weight: bold;
@@ -1107,8 +1107,7 @@ header .container-fluid {
 }
 
 .lang-item {
-    line-height: 24px;
-    width: 47px;
+    min-width: 47px;
     text-align: center;
 }
 
@@ -1116,3 +1115,13 @@ header .container-fluid {
     background-color: #31363A;
     border-radius: 2px;
 }
+
+.language-switchers div {
+    height: inherit;
+}
+
+.language-switchers a {
+    padding: 0 10px !important;
+    line-height: 24px !important;
+}
+
