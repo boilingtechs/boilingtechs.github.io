@@ -425,7 +425,7 @@ body {
 }
 
 .container-fluid {
-    max-width: 1300px;
+    max-width: 1400px;
     width: 96%;
     height: auto;
     margin: 0 auto;
@@ -527,7 +527,7 @@ body {
     }
 
     .container-fluid {
-        max-width: 1300px;
+        max-width: 1400px;
         width: 100%;
         height: auto;
         margin: 0 auto;
